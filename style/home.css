@@ -1,0 +1,701 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/Background\ Home.png);
+    background-size: 100% 2234px;
+    background-repeat: no-repeat;
+    background-position: 0px 700px;
+}
+
+/* Navbar Start */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #FAFF3B;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo > a {
+    color: #000000;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'OKASA';
+}
+
+.menu {
+    margin-left: 70px;
+    width: 707px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Manga Temple';
+}
+
+#current-menu {
+    color: #FF0000;
+}
+
+.menu > a:hover {
+    color: #FF0000;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 10px 0px 10px 11px;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #F67B50;
+    margin: 6px 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#responsive-menu {
+    display: none;
+}
+/* Navbar End */
+
+/* Carousel Start */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.image {
+    width: 20%;
+    height: 600px;
+    transition: 3s;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+/* Carousel End */
+
+.best-seller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    height: 480px;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: #F9D019;
+    position: relative;
+}
+
+.best-seller-lable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 0px;
+    top: -40px;
+    height: 80px;
+    width: 300px;
+    background-color: #FF0000;
+    position: absolute;
+}
+
+.best-seller-lable > p {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Manga Temple';
+}
+
+.best-seller img {
+    width: 400px;
+    height: 400px;
+    margin-left: 69px;
+}
+
+.new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    height: 480px;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: #F9D019;
+    position: relative;
+}
+
+.new-lable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 0px;
+    top: -40px;
+    height: 80px;
+    width: 150px;
+    background-color: #FF0000;
+    position: absolute;
+}
+
+.new-lable p {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Manga Temple';
+}
+
+.new img {
+    margin-left: 69px;
+    width: 400px;
+    height: 400px;
+}
+
+.ramen-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 21px;
+}
+
+.ramen-description h1 {
+    color: #FF0000;
+    font-family: 'Manga Temple';
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#best-seller-desc {
+    display: flex;
+    justify-content: center;
+}
+
+#new-desc {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > h1 {
+    color: #FF0000;
+    font-size: 32px;
+    font-family: 'Manga Temple';
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.discount-box {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    font-size: 32px;
+    font-family: 'Manga Temple';
+    background-color: #000000;
+}
+
+.discount-box > span {
+    margin-left: 23px;
+    color: #FF5252;
+}
+
+.discount-box > p {
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+.special {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    width: 150px;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+#description-1 {
+    width: 548px;
+    margin-top: 13px;
+}
+
+#description-2 {
+    width: 548px;
+    margin-top: 50px;
+}
+
+#description-3 {
+    width: 788px;
+    margin-top: 13px;
+}
+
+pre {
+    font-size: 16px;
+    font-family: 'Roboto Slab';
+}
+
+.promotion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    height: 280px;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: #F9D019;
+}
+
+.promotion img {
+    width: 300px;
+    height: 255.45px;
+    margin-left: 36px;
+    margin-top: 13px;
+}
+
+.promotion-description {
+    margin-left: 19px;
+}
+
+.attribute {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+#add-on {
+    display: flex;
+}
+
+#add-on > s {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#add-on > p {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00FF0A;
+}
+
+.attribute > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.outlet {
+    margin-top: 89px;
+}
+
+.outlet > h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Manga Temple';
+    text-align: center;
+    color: #F9AB17;
+}
+
+.outlet-wrapper {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#separator {
+    width: 1px;
+    height: 450px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #000000;
+}
+
+.outlet-photo {
+    width: 300px;
+    height: 225px;
+    border-radius: 5px;
+}
+
+.outlet-photo:hover {
+    opacity: 0.8;
+}
+
+.outlet-name {
+    margin-top: 11px;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    color: #F9AB17;
+}
+
+.address {
+    margin-top: 4px;
+    width: 300px;
+    font-size: 16px;
+    font-family: 'Roboto Slab';
+    letter-spacing: 0.2em;
+}
+
+.outlet-desc {
+    letter-spacing: 0.2em;
+    margin-top: 4px;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+}
+
+/* Footer Start */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    background-color: #EB6D18;
+}
+
+#middle {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.social-media img {
+    cursor: pointer;
+}
+
+.footer > p {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Slab';
+}
+/* Footer End */
+
+@media screen and (max-width: 768px){
+    /* Responsive Menu Start */
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        margin-right: 20px;
+        display: block;
+    }
+
+    #current-menu {
+        color: #FF0000 !important;
+    }
+
+    #responsive-menu {
+        width: 100%;
+        background-color: #FFE880;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+    }
+
+    #responsive-menu > a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #responsive-menu > a:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    /* Responsive Menu End */
+
+    .best-seller {
+        width: 600px;
+        height: 380px;
+    }
+    
+    .best-seller-lable {
+        height: 80px;
+        width: 250px;
+    }
+    
+    .best-seller-lable > p {
+        font-size: 24px;
+    }
+    
+    .best-seller img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .new {
+        width: 600px;
+        height: 380px;
+    }
+    
+    .new-lable {
+        height: 80px;
+        width: 150px;
+    }
+    
+    .new-lable p {
+        font-size: 24px;
+    }
+    
+    .new img {
+        margin-left: 39px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .ramen-description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 21px;
+    }
+    
+    .ramen-description h1 {
+        font-size: 24px;
+    }
+
+    #description-1 {
+        width: 300px;
+    }
+
+    #description-2 {
+        display: none;
+    }
+
+    .promotion {
+        width: 600px;
+        height: 280px;
+    }
+    
+    .promotion img {
+        width: 200px;
+        height: 200px;
+        margin-left: 36px;
+        margin-top: 13px;
+    }
+    
+    .promotion-description {
+        margin-left: 19px;
+    }
+
+    #description-3 {
+        width: 300px;
+    }
+
+    .header {
+        display: flex;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .discount-box {
+        display: none;
+    }
+
+    .attribute {
+        display: flex;
+        margin-top: 17px;
+    }
+
+    .attribute a {
+        margin: auto;
+    }
+} 
+
+@media screen and (max-width: 696px){
+    .container {
+        background-size: 100% 2374px;
+    }
+
+    .outlet-wrapper {
+        flex-direction: column;
+    }
+
+    .right-outlet {
+        margin-top: 50px;
+    }
+
+    #separator {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 615px){
+    .container {
+        background-size: 100% 2474px;
+        background-position: 0px 400px;
+    }
+
+    .slides {
+        height: 300px;
+    }
+
+    .image {
+        height: 300px;
+    }
+
+    .best-seller {
+        width: 400px;
+        height: 380px;
+    }
+    
+    .best-seller-lable {
+        height: 50px;
+        width: 200px;
+    }
+    
+    .best-seller-lable > p {
+        font-size: 20px;
+    }
+    
+    .best-seller img{
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .new {
+        width: 400px;
+        height: 380px;
+    }
+    
+    .new-lable {
+        height: 50px;
+        width: 200px;
+    }
+    
+    .new-lable p {
+        font-size: 20px;
+    }
+    
+    .new img {
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    #description-1 {
+        width: 200px;
+    }
+
+    .ramen-description h1 {
+        font-size: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .promotion {
+        width: 400px;
+        height: 380px;
+    }
+    
+    .promotion img {
+        width: 150px;
+        height: 150px;
+        margin-left: 16px;
+        margin-top: 13px;
+    }
+
+    #description-3 {
+        width: 200px;
+    }
+
+    .attribute {
+        flex-direction: column;
+    }
+
+    .attribute a {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .logo img {
+        width: 75px;
+    }
+
+    .logo > a {
+        font-size: 24px;
+    }
+
+    .footer > p {
+        font-size: 12px;
+        text-align: center;
+    }
+}

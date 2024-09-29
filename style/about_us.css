@@ -1,0 +1,321 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url('../assets/Background\ About\ Us.png');
+    background-size: 100% 1400px;
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+}
+
+/* Navbar Start */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #FAFF3B;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo > a {
+    color: #000000;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'OKASA';
+}
+
+.menu {
+    margin-left: 70px;
+    width: 707px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Manga Temple';
+}
+
+#current-menu {
+    color: #FF0000;
+}
+
+.menu > a:hover {
+    color: #FF0000;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 10px 0px 10px 11px;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #F67B50;
+    margin: 6px 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#responsive-menu {
+    display: none;
+}
+/* Navbar End */
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/History.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.history > h1 {
+    margin-right: 360px;
+    text-align: right;
+}
+
+.history > p {
+    width: 520px;
+    margin-top: 12px;
+    margin-left: 825px;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+}
+
+.vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/Vision.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.vision > h1 {
+    margin-left: 360px;
+}
+
+.vision > p {
+    width: 520px;
+    margin-top: 12px;
+    margin-left: 360px;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/Mission.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.mission > h1 {
+    margin-right: 360px;
+    text-align: right;
+}
+
+.mission > p {
+    width: 520px;
+    margin-top: 12px;
+    margin-left: 825px;
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Roboto Slab';
+}
+
+.title {
+    color: #F9D019;
+    font-family: 'Manga Temple';
+}
+
+.description {
+    color: #FFFFFF;
+}
+
+/* Footer Start */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: #EB6D18;
+}
+
+#middle {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.social-media img {
+    cursor: pointer;
+}
+
+.footer > p {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Slab';
+}
+/* Footer End */
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-size: 100% 1400px;
+    }
+
+    /* Responsive Menu Start */
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        margin-right: 20px;
+        display: block;
+    }
+
+    #current-menu {
+        color: #FF0000 !important;
+    }
+
+    #responsive-menu {
+        width: 100%;
+        background-color: #FFE880;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+    }
+
+    #responsive-menu > a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #responsive-menu > a:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    /* Responsive Menu End */
+
+    .history {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .history h1 {
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+    
+    .history p {
+        width: 75%;
+        margin-top: 12px;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .vision {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vision > h1 {
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .vision > p {
+        width: 75%;
+        margin-top: 12px;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .mission {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mission > h1 {
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+    
+    .mission > p {
+        width: 75%;
+        margin-top: 12px;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .logo img {
+        width: 75px;
+    }
+
+    .logo > a {
+        font-size: 24px;
+    }
+
+    .footer > p {
+        font-size: 12px;
+        text-align: center;
+    }
+}

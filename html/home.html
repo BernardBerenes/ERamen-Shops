@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto Slab'>
+    <script src="../script/script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="../assets/Logo.png" alt="" id="ERamen-logo"></a>
+                <a href="home.html">ERamen</a>
+            </div>
+
+            <div class="menu">
+                <a href="home.html" id="current-menu">Home</a>
+                <a href="product.html">Products</a>
+                <a href="promotion.html">Promotion</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+
+            <button class="hamburger" onclick="show_ham()">
+                <div class="bar"></div>
+            </button>
+
+        </nav>
+        <div id="responsive-menu">
+            <a href="home.html" id="current-menu">Home</a>
+            <a href="product.html">Products</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+        <div class="carousel">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                <div class="image first">
+                    <img src="../assets/Shio_Ramen.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="../assets/Tokushima_Ramen.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="../assets/Tonkotsu_Ramen.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="best-seller">
+            <div class="best-seller-lable">
+                <p>Best Seller</p>
+            </div>
+            <a href=""><img src="../assets/Kurume_Ramen.png" alt="Kurume Ramen" class="show-off-ramen"></a>
+            <div class="ramen-description" id="best-seller-desc">
+                <h1>Kurume Ramen</h1>
+                <p id="description-1">The noodles in Kurume ramen are thin and straight, usually made from 
+wheat flour. They have a firm and chewy texture, which pairs well with the 
+rich broth. The ramen is often topped with various ingredients such as 
+slices of tender chashu (braised pork), marinated bamboo shoots, scallions, 
+and sometimes a soft-boiled egg. Some variations may include additional 
+toppings like seaweed, bean sprouts, or black garlic oil.</p>
+
+                <p id="description-2">久留米ラーメンの麺は細くてストレートで、通常は小麦粉から作られます。
+しっかりとした歯ごたえがあり、濃厚なスープとよく合います。ラーメンに
+は、柔らかいチャーシューのスライス、タケノコのマリネ、ネギ、時には半熟
+卵など、さまざまな具材がトッピングされることがよくあります。バリエー
+ションによっては、海苔、もやし、黒ガーリックオイルなどの追加トッピング
+が含まれる場合もあります。</p>
+            </div>
+        </div>
+
+        <div class="new">
+            <div class="new-lable">
+                <p>New</p>
+            </div>
+            <a href=""><img src="../assets/Hakata_Ramen.png" alt="Kurume Ramen" class="show-off-ramen"></a>
+            <div class="ramen-description" id="new-desc">
+                <h1>Hakata Ramen</h1>
+                <p id="description-1">Hakata ramen, originating from Fukuoka, Japan, features a rich tonkotsu 
+broth made from simmered pork bones. Thin and firm noodles provide a 
+satisfying chewiness. Toppings like chashu pork, pickled ginger, menma 
+bamboo shoots, green onions, and sesame seeds complete the dish. It's a 
+simple yet flavorful bowl of ramen beloved by enthusiasts worldwide.</p>
+
+                <p id="description-2">福岡発祥の博多ラーメンは、豚骨を煮込んだ濃厚な豚骨スープが特徴です。細
+麺でコシのある麺は食べごたえがあります。チャーシュー、紅生姜、メンマ、
+ネギ、ゴマなどをトッピングして完成です。シンプルながら味わい深く、世界
+中の愛好家に愛されているラーメンです。</p>
+            </div>
+        </div>
+
+        <div class="promotion">
+            <img src="../assets/Shoyu_Ramen.png" alt="Shoyu Ramen">
+            <div class="promotion-description">
+                <div class="header">
+                    <h1>Shoyu Ramen</h1>
+                    <div class="discount-box">
+                        <div class="special">Special</div>
+                        <span id="discount-price">30%</span>
+                        <p>OFF</p>
+                    </div>
+                </div>
+                <p id="description-3">Shoyu ramen is an iconic Japanese noodle dish known for its umami-packed soy sauce broth. This 
+comforting soup features al dente wheat noodles, tender slices of pork, earthy mushrooms, crisp bamboo 
+shoots, and a garnish of green onions and nori, creating a satisfying and flavorful bowl of goodness.</p>
+                <div class="attribute">
+                    <div id="add-on">
+                        <s>Rp100.000</s>
+                        <p>Rp70.000</p>
+                    </div>
+                    <a href="promotion.html">See More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="outlet">
+            <h1>Outlet</h1>
+            <div class="outlet-wrapper">
+                <section class="left-outlet">
+                    <img src="../assets/Outlet 1.jpg" alt="Outlet 1" class="outlet-photo">
+                    <h2 class="outlet-name">ERamen Merdeka</h2>
+                    <p class="address">Jalan Merdeka No. 03, Jakarta Barat</p>
+                    <p class="outlet-desc">Mon-Sat</p>
+                    <p class="outlet-desc">10 AM - 8 PM</p>
+                </section>
+    
+                <div id="separator"></div>
+    
+                <section class="right-outlet">
+                    <img src="../assets/Outlet 2.jpg" alt="Outlet 2" class="outlet-photo">
+                    <h2 class="outlet-name">ERamen Basuki</h2>
+                    <p class="address">Jalan Basuki Rahmat No. 1020, Jakarta Pusat</p>
+                    <p class="outlet-desc">Mon-Sun</p>
+                    <p class="outlet-desc">8 AM - 8 PM</p>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-media">
+                <img src="../assets/Facebook.png" alt="">
+                <img src="../assets/Instagram.png" alt="" id="middle">
+                <img src="../assets/Twitter.png" alt="">
+            </div>
+            <p>Copyright © 2022. All rights reserved. ERamen</p>
+        </footer>
+    </div>
+</body>
+</html>

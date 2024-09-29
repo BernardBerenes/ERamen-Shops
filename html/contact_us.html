@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto Slab'>
+    <link rel="stylesheet" href="../style/contact_us.css">
+    <script src="../script/script.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="../assets/Logo.png" alt="" id="ERamen-logo"></a>
+                <a href="home.html">ERamen</a>
+            </div>
+
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="promotion.html">Promotion</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html" id="current-menu">Contact Us</a>
+            </div>
+
+            <button class="hamburger" onclick="show_ham()">
+                <div class="bar"></div>
+            </button>
+
+        </nav>
+        
+        <div class="contact-us">
+            <form action="" id="contact-us-form">
+                <h1>ERamen Indonesia</h1>
+                <input type="text" name="full-name" placeholder="Full Name" id="full-name">
+                <p id="full-name-error" class="error"></p>
+                <input type="text" name="email" placeholder="Email" id="email-address">
+                <p id="email-error" class="error"></p>
+                <input type="text" name="phone-number" placeholder="Phone Number" id="phone-number">
+                <p id="phone-number-error" class="error"></p>
+                <h3>Preferences</h3>
+                <div class="preferences-choose">
+                    <label class="radio">
+                        <input type="radio" name="preferences" id="ramen">Ramen
+                        <span></span>
+                    </label>
+                    
+                    <label class="radio">
+                        <input type="radio" name="preferences" id="dry-ramen">Dry Ramen
+                        <span></span>
+                    </label>
+                </div>
+                <p id="preferences-error" class="error"></p>
+                <div class="checkbox-newsletter">
+                    <div id="checkbox-wrapper">
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">By checking this, you agree to receive our newsletter</label>
+                    </div>
+                    <p id="error-newsletter" class="error"></p>
+                </div>
+            </form>
+            <button id="submit-btn" onclick="validate()">Submit</button>
+        </div>
+        
+        <div id="responsive-menu">
+            <a href="home.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html" id="current-menu">Contact Us</a>
+        </div>
+
+        <footer class="footer">
+            <div class="social-media">
+                <img src="../assets/Facebook.png" alt="">
+                <img src="../assets/Instagram.png" alt="" id="middle">
+                <img src="../assets/Twitter.png" alt="">
+            </div>
+            <p>Copyright © 2022. All rights reserved. ERamen</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,595 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/Background\ Product.png);
+    background-size: 100% 1244px;
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+}
+
+/* Navbar Start */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #FAFF3B;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo > a {
+    color: #000000;
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'OKASA';
+}
+
+.menu {
+    margin-left: 70px;
+    width: 707px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Manga Temple';
+}
+
+#current-menu {
+    color: #FF0000;
+}
+
+.menu > a:hover {
+    color: #FF0000;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 10px 0px 10px 11px;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #F67B50;
+    margin: 6px 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+#responsive-menu {
+    display: none;
+}
+/* Navbar End */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totoshisho-promo {
+    display: flex;
+    margin-top: 35px;
+    width: 1050px;
+    height: 500px;
+    background-color: #F9D019;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px rgba(249, 208, 25, 0.5);
+}
+
+.totoshisho-promo:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.05));
+}
+
+.left-content > img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+}
+
+#ramen-1 {
+    top: 169px;
+    left: 61px;
+}
+
+#ramen-2 {
+    top: 54px;
+    left: 174px;
+}
+
+#ramen-3 {
+    top: 285px;
+    left: 174px;
+}
+
+#primary {
+    width: 200px;
+    height: 200px;
+    top: 144px;
+    left: 300px;
+}
+
+.right-content {
+    position: absolute;
+    margin-top: 32px;
+    left: 590px;
+}
+
+.right-content > h1 {
+    font-size: 64px;
+    font-family: 'Roboto Slab';
+}
+
+hr {
+    border: 1px solid #FF0000;
+}
+
+.right-content > h2 {
+    color: #FF0000;
+    font-family: 'Manga Temple';
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul > li {
+    font-family: 'Manga Temple';
+    list-style: none;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+span {
+    color: #FF0000;
+}
+
+#desc {
+    margin-top: 17px;
+    margin-left: 50px;
+    text-align: center;
+    width: 330px;
+    font-size: 16px;
+}
+
+#only {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price > span {
+    font-weight: 400;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.price > p {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.partnership { 
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+.partnership > img {
+    height: 35px;
+}
+
+#gopay {
+    width: 150px;
+}
+
+#shopee-pay {
+    width: 125px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+#dana {
+    width: 120px;
+}
+
+.promo {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 500px;
+    height: 227px;
+}
+
+.right {
+    width: 500px;
+    height: 227px;
+}
+
+.box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9D019;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.05));
+}
+
+.wrapper-box {
+    display: flex;
+}
+
+.left-box {
+    margin-top: 17px;
+    margin-left: 17px;
+}
+
+.left-box > img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.right-box {
+    margin-top: 10px;
+    margin-left: 21px;
+}
+
+.right-box > h1 {
+    font-size: 32px;
+    font-family: 'Viga';
+    font-weight: 400;
+}
+
+.right-box > h2 {
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Manga Temple';
+    color: #FF0000;
+}
+
+.box-price {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab';
+}
+
+.box-price > span {
+    color: #FF0000;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.box-price > p {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.box-partnership {
+    margin: 14px 0px 14px 17px;
+}
+
+.box-partnership > img {
+    width: 110px;
+    height: 32px;
+}
+
+#partnership-middle {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Footer Start */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    width: 100%;
+    height: 100px;
+    background-color: #EB6D18;
+}
+
+#middle {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.social-media img {
+    cursor: pointer;
+}
+
+.footer > p {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Slab';
+}
+/* Footer End */
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-size: 100% 2144px;
+    }
+
+    /* Responsive Menu Start */
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        margin-right: 20px;
+        display: block;
+    }
+
+    #current-menu {
+        color: #FF0000 !important;
+    }
+
+    #responsive-menu {
+        width: 100%;
+        background-color: #FFE880;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+    }
+
+    #responsive-menu > a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #responsive-menu > a:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    /* Responsive Menu End */
+
+    .totoshisho-promo {
+        flex-direction: column;
+        margin-top: 35px;
+        width: 500px;
+        height: 800px;
+    }
+
+    .left-content > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #ramen-1 {
+        top: 139px;
+        left: 91px;
+    }
+    
+    #ramen-2 {
+        top: 54px;
+        left: 174px;
+    }
+    
+    #ramen-3 {
+        top: 225px;
+        left: 174px;
+    }
+    
+    #primary {
+        width: 150px;
+        height: 150px;
+        top: 114px;
+        left: 270px;
+    }
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin-top: 350px;
+        left: 30px;
+    }
+
+    ul > li {
+        text-align: center;
+    }
+
+    #desc {
+        margin-left: 0px;
+    }
+
+    .promo {
+        flex-direction: column;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        row-gap: 190px;
+    }
+
+    .left {
+        width: 400px;
+        height: 227px;
+    }
+
+    .left-box > img {
+        width: 150px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    
+    .right {
+        margin-top: 100px;
+        width: 400px;
+        height: 227px;
+    }
+
+    .footer {
+        margin-top: 350px;
+    }
+
+    .right-box > h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .right-box > h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .box-price > span {
+        font-size: 18px;
+    }
+    
+    .box-price > p {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    #gopay {
+        width: 120px;
+    }
+    
+    #shopee-pay {
+        width: 95px;
+    }
+    
+    #dana {
+        width: 90px;
+    }
+
+    .totoshisho-promo {
+        width: 400px;
+        height: 700px;
+    }
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin-top: 350px;
+        /* left: -15px; */
+    }
+
+    .right-content h1 {
+        font-size: 32px;
+    }
+
+    .right-content h2 {
+        font-size: 16px;
+    }
+
+    ul > li {
+        font-size: 14px;
+    }
+
+    .price span {
+        font-size: 24px;
+    }
+
+    .price p {
+        font-size: 32px;
+    }
+
+    #ramen-1 {
+        top: 139px;
+        left: 26px;
+    }
+    
+    #ramen-2 {
+        top: 54px;
+        left: 109px;
+    }
+    
+    #ramen-3 {
+        top: 225px;
+        left: 109px;
+    }
+    
+    #primary {
+        width: 150px;
+        height: 150px;
+        top: 114px;
+        left: 205px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    
+
+    .logo img {
+        width: 75px;
+    }
+
+    .logo > a {
+        font-size: 24px;
+    }
+
+    .footer > p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
